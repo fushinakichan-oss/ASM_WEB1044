@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TTGSHOP - PC Gaming & Linh Kiện Máy Tính</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html"><span class="logo-red">TTG</span><span class="logo-dark">SHOP</span></a>
+            </div>
+            <nav class="nav">
+                <a href="index.html" class="active">Trang chủ</a>
+                <a href="products.html">Sản phẩm</a>
+                <a href="cart.html">Giỏ hàng</a>
+                <a href="login.html">Đăng nhập</a>
+            </nav>
+            <a href="cart.html" class="cart-icon-wrapper">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+
+    <section class="banner">
+        <div class="container">
+            <h1>TTGSHOP - CHUYÊN PC GAMING & LINH KIỆN</h1>
+            <p>Cung cấp PC Gaming, PC Đồ Họa và linh kiện máy tính giá tốt nhất cho sinh viên.</p>
+            <a href="products.html" class="btn">Xem sản phẩm ngay</a>
+        </div>
+    </section>
+
+    <section class="about-section container">
+        <h2>Về TTG SHOP</h2>
+        <p>TTG SHOP là đơn vị chuyên cung cấp PC GAMING, PC ĐỒ HỌA, PC Đẹp và các sản phẩm linh kiện máy tính giá tốt.</p>
+    </section>
+
+    <main class="container">
+        <section class="product-section">
+            <h2 class="section-title"><i class="fa-solid fa-fire" style="color: #e74c3c;"></i> SẢN PHẨM HOT</h2>
+            <div class="product-grid" id="hot-products"></div>
+        </section>
+
+        <section class="product-section">
+            <h2 class="section-title"><i class="fa-solid fa-sparkles" style="color: #f1c40f;"></i> SẢN PHẨM MỚI</h2>
+            <div class="product-grid" id="new-products"></div>
+        </section>
+
+        <section class="product-section">
+            <h2 class="section-title"><i class="fa-solid fa-tags" style="color: #2ecc71;"></i> SẢN PHẨM KHUYẾN MÃI</h2>
+            <div class="product-grid" id="sale-products"></div>
+        </section>
+    </main>
+
+    <script src="products.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ Hàng - TTGSHOP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html"><span class="logo-red">TTG</span><span class="logo-dark">SHOP</span></a>
+            </div>
+            <nav class="nav">
+                <a href="index.html">Trang chủ</a>
+                <a href="products.html">Sản phẩm</a>
+                <a href="cart.html" class="active">Giỏ hàng</a>
+                <a href="login.html">Đăng nhập</a>
+            </nav>
+            <a href="cart.html" class="cart-icon-wrapper">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cart-count">0</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="container" style="margin-top: 30px; margin-bottom: 40px;">
+        <h2 class="section-title">GIỎ HÀNG CỦA BẠN</h2>
+        
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Hình ảnh</th>
+                    <th>Tên sản phẩm</th>
+                    <th>Đơn giá</th>
+                    <th>Số lượng</th>
+                    <th>Thành tiền</th>
+                    <th>Thao tác</th>
+                </tr>
+            </thead>
+            <tbody id="cart-items-page"></tbody>
+        </table>
+        
+        <div id="empty-cart-msg-page" style="text-align: center; padding: 30px; display: none;">
+            <p style="font-size: 1.1rem; color: #666;">Giỏ hàng của bạn đang trống!</p>
+            <a href="products.html" class="btn" style="margin-top: 10px;">Khám phá sản phẩm</a>
+        </div>
+
+        <div style="margin-top: 25px; text-align: right;">
+            <h3>Tổng thanh toán: <span id="cart-total-page" style="color: #e74c3c;">0 đ</span></h3>
+            <button class="btn" style="margin-top: 15px; padding: 10px 25px; font-size: 16px;" onclick="checkout()">Thanh toán ngay</button>
+        </div>
+    </main>
+
+    <script src="products.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>
